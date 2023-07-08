@@ -1,0 +1,4 @@
+TREENAME(Follower_AI)
+TREENODE(C_Sequencer, 0)
+TREENODE(L_Follow, 1)
+TREENODE(L_FindHighestAppeal, 1)

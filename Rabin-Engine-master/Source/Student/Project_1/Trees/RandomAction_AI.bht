@@ -1,0 +1,5 @@
+TREENAME(RandomAction_AI)
+TREENODE(C_RandomSelector, 0)
+TREENODE(L_MoveToRandomPosition, 1)
+TREENODE(L_Whiplash, 1)
+TREENODE(L_Wandering, 1)
