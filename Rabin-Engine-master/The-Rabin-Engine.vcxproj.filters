@@ -335,6 +335,13 @@
     <ClInclude Include="Source\Student\Project_1\Leaf\L_InitializeBlackBoard.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Initialize.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckConfidence.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveNorth.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveSouth.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveEast.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveWest.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.h" />
+    <ClInclude Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Framework\Main.cpp">
@@ -572,6 +579,13 @@
     <ClCompile Include="Source\Student\Project_1\Leaf\L_InitializeBlackBoard.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Initialize.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckConfidence.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveNorth.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveSouth.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveEast.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveWest.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.cpp" />
+    <ClCompile Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />
