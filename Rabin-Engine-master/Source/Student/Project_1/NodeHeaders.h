@@ -8,8 +8,9 @@
 #include "ControlFlow/C_Selector.h"
 #include "ControlFlow/C_Sequencer.h"
 
-// Student Control Flow Nodes
 
+// Student Control Flow Nodes
+#include "ControlFLow/C_InputBasedSelector.h"
 
 // Example Decorator Nodes
 #include "Decorator/D_Delay.h"
@@ -22,6 +23,8 @@
 #include "Decorator/D_Searcher.h"
 #include "Decorator/D_Leader.h"
 #include "Decorator/D_Initialize.h"
+#include "Decorator/D_CheckMovementInput.h"
+#include "Decorator/D_RepeatXTimes.h"
 
 
 // Example Leaf Nodes
@@ -40,3 +43,7 @@
 #include "Leaf/L_FindHighestAppeal.h"
 #include "Leaf/L_InitializeBlackBoard.h"
 #include "Leaf/L_CheckConfidence.h"
+#include "Leaf/L_MoveNorth.h"
+#include "Leaf/L_MoveSouth.h"
+#include "Leaf/L_MoveEast.h"
+#include "Leaf/L_MoveWest.h"

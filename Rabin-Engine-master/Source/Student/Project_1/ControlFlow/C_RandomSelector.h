@@ -7,6 +7,7 @@ public:
     C_RandomSelector();
 protected:
     size_t randomIndex;
+    size_t lastIndex;
 
     virtual void on_enter() override;
     virtual void on_update(float dt) override;

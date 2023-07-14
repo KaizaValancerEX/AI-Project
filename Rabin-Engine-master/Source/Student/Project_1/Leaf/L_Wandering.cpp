@@ -32,6 +32,7 @@ void L_Wandering::on_enter()
 void L_Wandering::on_update(float dt)
 {
 	const auto result = agent->move_toward_point({targetPoint.x,0.f,targetPoint.z}, dt);
+	
 
 
 	if (result == true)

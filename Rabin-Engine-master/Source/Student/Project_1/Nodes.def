@@ -2,6 +2,8 @@ REGISTER_CONTROLFLOW(C_ParallelSequencer, "C_ParallelSequencer")
 REGISTER_CONTROLFLOW(C_RandomSelector, "C_RandomSelector")
 REGISTER_CONTROLFLOW(C_Selector, "C_Selector")
 REGISTER_CONTROLFLOW(C_Sequencer, "C_Sequencer")
+REGISTER_CONTROLFLOW(C_InputBasedSelector, "C_InputBasedSelector")
+
 
 REGISTER_DECORATOR(D_Delay, "D_Delay")
 REGISTER_DECORATOR(D_InvertedRepeater, "D_InvertedRepeater")
@@ -10,6 +12,10 @@ REGISTER_DECORATOR(D_Follower, "D_Follower")
 REGISTER_DECORATOR(D_Searcher, "D_Searcher")
 REGISTER_DECORATOR(D_Leader, "D_Leader")
 REGISTER_DECORATOR(D_Initialize, "D_Initialize")
+REGISTER_DECORATOR(D_CheckMovementInput, "D_CheckMovementInput")
+REGISTER_DECORATOR(D_RepeatXTimes, "D_RepeatXTimes")
+
+
 
 REGISTER_LEAF(L_CheckMouseClick, "L_CheckMouseClick")
 REGISTER_LEAF(L_Idle, "L_Idle")
@@ -24,3 +30,7 @@ REGISTER_LEAF(L_Follow, "L_Follow")
 REGISTER_LEAF(L_FindHighestAppeal, "L_FindHighestAppeal")
 REGISTER_LEAF(L_InitializeBlackBoard, "L_InitializeBlackBoard")
 REGISTER_LEAF(L_CheckConfidence, "L_CheckConfidence")
+REGISTER_LEAF(L_MoveNorth, "L_MoveNorth")
+REGISTER_LEAF(L_MoveSouth, "L_MoveSouth")
+REGISTER_LEAF(L_MoveEast, "L_MoveEast")
+REGISTER_LEAF(L_MoveWest, "L_MoveWest")

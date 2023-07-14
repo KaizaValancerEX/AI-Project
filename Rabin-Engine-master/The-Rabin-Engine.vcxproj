@@ -181,10 +181,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Follower.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Initialize.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Leader.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Searcher.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckConfidence.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_FindHighestAppeal.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckForEventTrigger.h" />
@@ -266,9 +269,13 @@
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Follow.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Idle.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_InitializeBlackBoard.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveEast.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveNorth.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveSouth.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToFurthestAgent.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToMouseClick.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToRandomPosition.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveWest.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_PlaySound.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Wandering.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Whiplash.h" />
@@ -276,9 +283,12 @@
     <ClInclude Include="Source\Student\Project_2\P2_Pathfinding.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Follower.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Initialize.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Leader.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Searcher.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckConfidence.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_FindHighestAppeal.cpp" />
@@ -357,9 +367,13 @@
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Follow.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Idle.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_InitializeBlackBoard.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveEast.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveNorth.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveSouth.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToFurthestAgent.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToMouseClick.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToRandomPosition.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveWest.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_PlaySound.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Wandering.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Whiplash.cpp" />
