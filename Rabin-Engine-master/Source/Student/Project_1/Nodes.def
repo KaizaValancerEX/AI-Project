@@ -14,6 +14,8 @@ REGISTER_DECORATOR(D_Leader, "D_Leader")
 REGISTER_DECORATOR(D_Initialize, "D_Initialize")
 REGISTER_DECORATOR(D_CheckMovementInput, "D_CheckMovementInput")
 REGISTER_DECORATOR(D_RepeatXTimes, "D_RepeatXTimes")
+REGISTER_DECORATOR(D_CheckAlive, "D_CheckAlive")
+
 
 
 
@@ -34,3 +36,5 @@ REGISTER_LEAF(L_MoveNorth, "L_MoveNorth")
 REGISTER_LEAF(L_MoveSouth, "L_MoveSouth")
 REGISTER_LEAF(L_MoveEast, "L_MoveEast")
 REGISTER_LEAF(L_MoveWest, "L_MoveWest")
+REGISTER_LEAF(L_MoveToNearestNPC, "L_MoveToNearestNPC")
+REGISTER_LEAF(L_Dead, "L_Dead")

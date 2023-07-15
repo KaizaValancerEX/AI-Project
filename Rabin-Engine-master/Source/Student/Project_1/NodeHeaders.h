@@ -25,6 +25,7 @@
 #include "Decorator/D_Initialize.h"
 #include "Decorator/D_CheckMovementInput.h"
 #include "Decorator/D_RepeatXTimes.h"
+#include "Decorator/D_CheckAlive.h"
 
 
 // Example Leaf Nodes
@@ -47,3 +48,5 @@
 #include "Leaf/L_MoveSouth.h"
 #include "Leaf/L_MoveEast.h"
 #include "Leaf/L_MoveWest.h"
+#include "Leaf/L_MoveToNearestNPC.h"
+#include "Leaf/L_Dead.h"

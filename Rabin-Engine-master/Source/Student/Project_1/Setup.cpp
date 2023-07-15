@@ -8,35 +8,37 @@ void ProjectOne::setup()
 
 	agents->create_behavior_agent("PlayerAgent", BehaviorTreeTypes::InputTester);
 
-	
+
 
 	auto agent = agents->get_all_agents();
 	agent[0]->set_position(Vec3{ 50,0,50 });
 
-	for (int i = 0; i <= 3; ++i) {
+	for (int i = 0; i <= 10; ++i) {
 
 		//agents->create_behavior_agent("MainAgent", BehaviorTreeTypes::Main_AI);
 		agents->create_behavior_agent("AIAgent", BehaviorTreeTypes::MoveTester);
-		
+
 	}
 
 
 
-	//int i = 1;
+	int i = 0;
 	for (auto T_agent : agents->get_all_agents()) {
 		//float size = (float)agents->get_all_agents().size();
 		T_agent->set_scaling(1.0f);
-		//if(T_agent->get_id() == 0) continue;
-		
+
+
 		T_agent->set_yaw(RNG::range<float>(-6.28319f, 6.28319f));
-		T_agent->set_position(RNG::world_position());
+		Vec3 rngwp = RNG::world_position();
+		//if (terrain->is_valid_grid_position(terrain->get_grid_position(rngwp)))
+		T_agent->set_position(rngwp);
 		//T_agent->set_AGrole(Agent_ROLE::SEARCHER);
 		T_agent->set_color({ 0,0,0 });
 		//T_agent->set_Appeal(RNG::range<int>(50, 100));
 		//T_agent->set_Confidence(RNG::range<int>(50, 100));
 
 		//T_agent->set_roll(1.5708f);
-		//i++;
+		i++;
 	}
 
 
@@ -52,9 +54,9 @@ void ProjectOne::setup()
 	terrain->pathLayer.set_value(0, 0, Colors::Red);
 
 	// camera position can be modified from this default as well
-	//auto camera = agents->get_camera_agent();
+	auto camera = agents->get_camera_agent();
 	//camera->set_position(Vec3(185.f, 70.0f, terrain->mapSizeInWorld * 0.5f));
-	//camera->set_pitch(2.79253f); // 35 degrees
+	camera->set_pitch(2.79253f); // 35 degrees
 
 	audioManager->SetVolume(0.5f);
 	//audioManager->PlaySoundEffect(L"Assets\\Audio\\glassclang.wav");

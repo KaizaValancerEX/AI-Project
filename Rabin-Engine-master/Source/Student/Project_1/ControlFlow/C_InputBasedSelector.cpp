@@ -22,6 +22,9 @@ void C_InputBasedSelector::on_enter()
 	case 3:
 		currentIndex = (int)IBSEnum::IBSE_KB_D;
 		break;
+	case 4:
+		currentIndex = (int)IBSEnum::IBSE_KB_E;
+		break;
 	default:
 		currentIndex = (int)IBSEnum::IBSE_NA;
 		break;

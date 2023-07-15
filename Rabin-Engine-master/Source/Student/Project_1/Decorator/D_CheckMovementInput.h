@@ -8,7 +8,7 @@ protected:
     virtual void on_update(float dt) override;
     //virtual void on_exit() override;
 
-    InputHandler::InputState Wbtn, Abtn, Sbtn, Dbtn;
+    InputHandler::InputState Wbtn, Abtn, Sbtn, Dbtn, Ebtn;
 
     enum class DirEnum:int
     {
@@ -17,7 +17,8 @@ protected:
         Dir_UP,
         Dir_DOWN,
         Dir_LEFT,
-        Dir_RIGHT
+        Dir_RIGHT,
+        Dir_KillNearestNPC
     };
 
     bool movementflag = false;
