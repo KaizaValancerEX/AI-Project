@@ -181,12 +181,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Student\Project_1\ControlFlow\C_DistanceBasedSelector.h" />
     <ClInclude Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckAlive.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Follower.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Initialize.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Leader.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_Panic.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Searcher.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Dead.h" />
@@ -271,6 +273,7 @@
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Follow.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Idle.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_InitializeBlackBoard.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_LookAtPoint.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveEast.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveNorth.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveSouth.h" />
@@ -286,12 +289,14 @@
     <ClInclude Include="Source\Student\Project_2\P2_Pathfinding.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Student\Project_1\ControlFlow\C_DistanceBasedSelector.cpp" />
     <ClCompile Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckAlive.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Follower.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Initialize.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Leader.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_Panic.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Searcher.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Dead.cpp" />
@@ -372,6 +377,7 @@
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Follow.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Idle.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_InitializeBlackBoard.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_LookAtPoint.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveEast.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveNorth.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveSouth.cpp" />

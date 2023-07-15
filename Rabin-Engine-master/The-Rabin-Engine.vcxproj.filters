@@ -345,6 +345,9 @@
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToNearestNPC.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_Dead.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckAlive.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_Panic.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_LookAtPoint.h" />
+    <ClInclude Include="Source\Student\Project_1\ControlFlow\C_DistanceBasedSelector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Framework\Main.cpp">
@@ -592,6 +595,9 @@
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToNearestNPC.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_Dead.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckAlive.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_Panic.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_LookAtPoint.cpp" />
+    <ClCompile Include="Source\Student\Project_1\ControlFlow\C_DistanceBasedSelector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="resource.rc" />

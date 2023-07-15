@@ -3,6 +3,8 @@ REGISTER_CONTROLFLOW(C_RandomSelector, "C_RandomSelector")
 REGISTER_CONTROLFLOW(C_Selector, "C_Selector")
 REGISTER_CONTROLFLOW(C_Sequencer, "C_Sequencer")
 REGISTER_CONTROLFLOW(C_InputBasedSelector, "C_InputBasedSelector")
+REGISTER_CONTROLFLOW(C_DistanceBasedSelector, "C_DistanceBasedSelector")
+
 
 
 REGISTER_DECORATOR(D_Delay, "D_Delay")
@@ -15,6 +17,8 @@ REGISTER_DECORATOR(D_Initialize, "D_Initialize")
 REGISTER_DECORATOR(D_CheckMovementInput, "D_CheckMovementInput")
 REGISTER_DECORATOR(D_RepeatXTimes, "D_RepeatXTimes")
 REGISTER_DECORATOR(D_CheckAlive, "D_CheckAlive")
+REGISTER_DECORATOR(D_Panic, "D_Panic")
+
 
 
 
@@ -38,3 +42,4 @@ REGISTER_LEAF(L_MoveEast, "L_MoveEast")
 REGISTER_LEAF(L_MoveWest, "L_MoveWest")
 REGISTER_LEAF(L_MoveToNearestNPC, "L_MoveToNearestNPC")
 REGISTER_LEAF(L_Dead, "L_Dead")
+REGISTER_LEAF(L_LookAtPoint, "L_LookAtPoint")

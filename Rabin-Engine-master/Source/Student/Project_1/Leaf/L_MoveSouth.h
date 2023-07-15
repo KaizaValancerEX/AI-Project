@@ -10,5 +10,6 @@ protected:
 
 private:
     Vec3 targetPoint;
-    float Speed;
+    Vec3 trailing;
+    float StepSize;
 };

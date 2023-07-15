@@ -7,6 +7,7 @@ void L_MoveToNearestNPC::on_enter()
 
 	for (auto& t_agent : agents->get_all_agents()) {
 		if (agent == t_agent) continue;
+		if (t_agent->get_DOA() == false) continue;
 
 		if ((agent->get_position() - t_agent->get_position()).Length() < nearest) {
 			nearest = (agent->get_position() - t_agent->get_position()).Length();
@@ -15,6 +16,7 @@ void L_MoveToNearestNPC::on_enter()
 	}
 
 	targetPoint = NearestAgent->get_position();
+	nearest = 100;
 
 	BehaviorNode::on_leaf_enter();
 }

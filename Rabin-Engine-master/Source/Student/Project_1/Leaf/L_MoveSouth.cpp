@@ -7,23 +7,25 @@ void L_MoveSouth::on_enter()
 	BehaviorNode::on_leaf_enter();
 	targetPoint = agent->get_position();
 	const auto& agbb = agent->get_blackboard();
-	Speed = agbb.get_value<float>("Speed");
+	StepSize = agbb.get_value<float>("StepSize");
+	trailing = agbb.get_value<Vec3>("TrailColor");
+
 }
 
 void L_MoveSouth::on_update(float dt)
 {
 
 
-	if (targetPoint.x - Speed < 0) {
+	if (targetPoint.x - StepSize < 0) {
 		on_failure();
 	}
 
 	else {
-		targetPoint = Vec3{ targetPoint.x -= Speed,targetPoint.y,targetPoint.z };
+		targetPoint = Vec3{ targetPoint.x -= StepSize,targetPoint.y,targetPoint.z };
 		const auto result = agent->move_toward_point(targetPoint, dt);
 
 		if (terrain->is_valid_grid_position(terrain->get_grid_position(targetPoint)))
-			terrain->set_color(terrain->get_grid_position(targetPoint), Color{ 1,0,0 });
+			terrain->set_color(terrain->get_grid_position(targetPoint), Color{ trailing.x,trailing.y,trailing.z });
 
 		on_success();
 	}

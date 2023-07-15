@@ -26,8 +26,6 @@ void ProjectOne::setup()
 	for (auto T_agent : agents->get_all_agents()) {
 		//float size = (float)agents->get_all_agents().size();
 		T_agent->set_scaling(1.0f);
-
-
 		T_agent->set_yaw(RNG::range<float>(-6.28319f, 6.28319f));
 		Vec3 rngwp = RNG::world_position();
 		//if (terrain->is_valid_grid_position(terrain->get_grid_position(rngwp)))

@@ -11,6 +11,7 @@
 
 // Student Control Flow Nodes
 #include "ControlFLow/C_InputBasedSelector.h"
+#include "ControlFlow/C_DistanceBasedSelector.h"
 
 // Example Decorator Nodes
 #include "Decorator/D_Delay.h"
@@ -26,6 +27,7 @@
 #include "Decorator/D_CheckMovementInput.h"
 #include "Decorator/D_RepeatXTimes.h"
 #include "Decorator/D_CheckAlive.h"
+#include "Decorator/D_Panic.h"
 
 
 // Example Leaf Nodes
@@ -50,3 +52,4 @@
 #include "Leaf/L_MoveWest.h"
 #include "Leaf/L_MoveToNearestNPC.h"
 #include "Leaf/L_Dead.h"
+#include "Leaf/L_LookAtPoint.h"

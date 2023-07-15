@@ -2,7 +2,7 @@
 #include "BehaviorNode.h"
 #include "Misc/NiceTypes.h"
 
-class L_MoveWest : public BaseNode<L_MoveWest>
+class L_LookAtPoint : public BaseNode<L_LookAtPoint>
 {
 protected:
     virtual void on_enter() override;
@@ -10,6 +10,7 @@ protected:
 
 private:
     Vec3 targetPoint;
-    Vec3 trailing;
-    float StepSize;
+    Vec3 Delta;
+    float delay;
+    float yaw;
 };

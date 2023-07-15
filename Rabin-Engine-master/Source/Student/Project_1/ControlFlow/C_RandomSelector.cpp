@@ -6,11 +6,10 @@ C_RandomSelector::C_RandomSelector() : randomIndex(-1)
 
 void C_RandomSelector::on_enter()
 {
-	BehaviorNode::on_enter();
+
 
 	choose_random_node();
-	auto& agbb = agent->get_blackboard();
-	lastIndex = agbb.get_value<int>("LastActiveNode");
+	BehaviorNode::on_enter();
 }
 
 void C_RandomSelector::on_update(float dt)
@@ -47,19 +46,11 @@ void C_RandomSelector::choose_random_node()
 	{
 		randomIndex = RNG::range(static_cast<size_t>(0), children.size() - 1);
 
-		if (randomIndex == lastIndex) {
-			while (randomIndex == lastIndex)
-			{
-				randomIndex = RNG::range(static_cast<size_t>(0), children.size() - 1);
-			}
-		}
-
 		BehaviorNode* node = children[randomIndex];
 
 
 		if (node->is_ready() == true)
 		{
-			lastIndex = randomIndex;
 			break;
 		}
 	}
