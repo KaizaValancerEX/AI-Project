@@ -55,8 +55,9 @@ void ProjectOne::setup()
 
 	// camera position can be modified from this default as well
 	auto camera = agents->get_camera_agent();
-	//camera->set_position(Vec3(185.f, 70.0f, terrain->mapSizeInWorld * 0.5f));
-	camera->set_pitch(2.79253f); // 35 degrees
+	std::cout << "X: " << camera->get_position().x << " Y: " << camera->get_position().y << " Z: " << camera->get_position().z << " Pitch: " << camera->get_pitch() << std::endl;
+	camera->set_position(Vec3(-60, 90, 50));
+	camera->set_pitch(0.6981f);
 
 	audioManager->SetVolume(0.5f);
 	//audioManager->PlaySoundEffect(L"Assets\\Audio\\glassclang.wav");
