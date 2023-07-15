@@ -51,6 +51,7 @@ public:
     int get_Appeal() const { return Appeal; }
     int get_Confidence() const { return Confidence; }
     int get_Fulfilment() const { return Fulfilment; }
+    bool get_DOA() const { return DOA; }
 #pragma endregion
 
 #pragma region Setters
@@ -73,6 +74,7 @@ public:
     void set_Appeal(int value) { Appeal = value; }
     void set_Confidence(int value) { Confidence = value; }
     void set_Fulfilment(int value) { Fulfilment = value; }
+    void set_DOA(bool doa) { DOA = doa; }
 #pragma endregion
 
     virtual void update(float dt);
@@ -91,6 +93,7 @@ private:
     const size_t id;
 
     float movementSpeed;
+    bool DOA;
 
     static std::unique_ptr<DirectX::Model> model;
 

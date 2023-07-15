@@ -13,15 +13,17 @@ void L_MoveNorth::on_enter()
 void L_MoveNorth::on_update(float dt)
 {
 
-	if (targetPoint.x+1.f > 100.f) {
+	if (targetPoint.x + 1.f > 100.f) {
 		on_failure();
 	}
 
 	else {
 		targetPoint = Vec3{ targetPoint.x += Speed,targetPoint.y,targetPoint.z };
 		const auto result = agent->move_toward_point(targetPoint, dt);
-		terrain->set_color(terrain->get_grid_position(targetPoint) , Color{ 1,0,0 });
-		
+
+		if (terrain->is_valid_grid_position(terrain->get_grid_position(targetPoint)))
+			terrain->set_color(terrain->get_grid_position(targetPoint), Color{ 1,0,0 });
+
 
 		on_success();
 	}

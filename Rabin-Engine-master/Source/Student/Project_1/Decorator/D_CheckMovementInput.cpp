@@ -8,6 +8,7 @@ void D_CheckMovementInput::on_enter()
 	Abtn = InputHandler::get_current_state(KBKeys::A);
 	Sbtn = InputHandler::get_current_state(KBKeys::S);
 	Dbtn = InputHandler::get_current_state(KBKeys::D);
+	Ebtn = InputHandler::get_current_state(KBKeys::E);
 }
 
 void D_CheckMovementInput::on_update(float dt)
@@ -33,6 +34,11 @@ void D_CheckMovementInput::on_update(float dt)
 		agbb.set_value<int>("KeyPressed", (int)DirEnum::Dir_RIGHT);
 		movementflag = true;
 	}
+	else if (Ebtn == InputHandler::InputState::PRESSED) {
+		agbb.set_value<int>("KeyPressed", (int)DirEnum::Dir_KillNearestNPC);
+		movementflag = true;
+	}
+
 	else {
 		agbb.set_value<int>("KeyPressed", (int)DirEnum::No_Dir);
 	}

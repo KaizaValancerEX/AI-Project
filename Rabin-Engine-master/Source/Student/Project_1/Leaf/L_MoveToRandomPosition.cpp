@@ -16,7 +16,6 @@ void L_MoveToRandomPosition::on_update(float dt)
 {
     const auto result = agent->move_toward_point(targetPoint, dt);
 
-
     if (result == true)
     {
         on_success();

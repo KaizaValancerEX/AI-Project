@@ -182,12 +182,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.h" />
+    <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckAlive.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Follower.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Initialize.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Leader.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_Searcher.h" />
     <ClInclude Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_Dead.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckConfidence.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_FindHighestAppeal.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_CheckForEventTrigger.h" />
@@ -274,6 +276,7 @@
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveSouth.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToFurthestAgent.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToMouseClick.h" />
+    <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToNearestNPC.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveToRandomPosition.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_MoveWest.h" />
     <ClInclude Include="Source\Student\Project_1\Leaf\L_PlaySound.h" />
@@ -284,12 +287,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Student\Project_1\ControlFlow\C_InputBasedSelector.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckAlive.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_CheckMovementInput.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Follower.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Initialize.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Leader.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_RepeatXTimes.cpp" />
     <ClCompile Include="Source\Student\Project_1\Decorator\D_Searcher.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_Dead.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckConfidence.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_FindHighestAppeal.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_CheckForEventTrigger.cpp" />
@@ -372,6 +377,7 @@
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveSouth.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToFurthestAgent.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToMouseClick.cpp" />
+    <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToNearestNPC.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveToRandomPosition.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_MoveWest.cpp" />
     <ClCompile Include="Source\Student\Project_1\Leaf\L_PlaySound.cpp" />

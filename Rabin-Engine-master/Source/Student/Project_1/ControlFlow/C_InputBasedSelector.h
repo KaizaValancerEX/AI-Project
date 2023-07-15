@@ -13,6 +13,7 @@ public:
         IBSE_KB_A,
         IBSE_KB_S,
         IBSE_KB_D,
+        IBSE_KB_E,
 
         IBSE_ENUM_COUNT
     }inputSelect;

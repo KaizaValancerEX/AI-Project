@@ -13,7 +13,6 @@ void D_Leader::on_enter()
 void D_Leader::on_update(float dt)
 {
 
-    // repeat the child until 4 successes, stop on any failure
     BehaviorNode* child = children.front();
 
     child->tick(dt);
