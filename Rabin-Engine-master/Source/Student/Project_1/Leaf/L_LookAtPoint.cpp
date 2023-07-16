@@ -12,6 +12,7 @@ void L_LookAtPoint::on_enter()
 	delay = 10.f;
 	agent->set_yaw(yaw);
 	BehaviorNode::on_leaf_enter();
+;
 
 }
 

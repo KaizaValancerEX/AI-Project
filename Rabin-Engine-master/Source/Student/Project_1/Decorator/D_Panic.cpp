@@ -9,9 +9,15 @@ void D_Panic::on_enter()
 
 	for (const auto& t_agent : agents->get_all_agents()) {
 		if (t_agent->get_DOA() == false) {
+
 			agbb.set_value<Agent*>("Target", t_agent);
-			agbb.set_value<bool>("Panic", true);
-			countdown = 5.f;
+			if (agbb.get_value<bool>("Panic_Init")) {
+				agbb.set_value<bool>("Panic", true);
+				countdown = 5.f;
+				agbb.set_value<bool>("Panic_Init", false);
+				audioManager->PlaySoundEffect(L"Assets\\Audio\\whatthehellisgoingonoverthere.wav");
+				audioManager->PlaySoundEffect(L"Assets\\Audio\\yelling.wav");
+			}
 			break;
 		}
 	}
@@ -35,6 +41,7 @@ void D_Panic::on_update(float dt)
 				agbb.set_value("Panic", false);
 				agents->destroy_agent(agbb.get_value<Agent*>("Target"));
 				agbb.set_value<Agent*>("Target", nullptr);
+				agbb.set_value<bool>("Panic_Init", true);
 			}
 
 			if (child->succeeded() == true)

@@ -15,6 +15,7 @@ void L_InitializeBlackBoard::on_enter()
 	bb.set_value<int>("KeyPressed", -1);
 	bb.set_value<float>("StepSize", 5.f);
 	bb.set_value<int>("LastActiveNode", 10);
+	bb.set_value<bool>("Panic_Init", true);
 
 	Vec3 trail = { RNG::range<float>(0.0f,1.0f),RNG::range<float>(0.0f,1.0f) ,RNG::range<float>(0.0f,1.0f) };
 	bb.set_value<Vec3>("TrailColor", trail);

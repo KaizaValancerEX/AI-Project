@@ -10,4 +10,5 @@ protected:
 
     float distFromCommotion;
     float countdown;
+    bool init;
 };
